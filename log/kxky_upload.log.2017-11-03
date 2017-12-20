@@ -1,0 +1,413 @@
+[2017-11-03 10:15:56 ERROR] [play-thread-2] (play:604) - 
+
+@75olb2eii
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found (In {play}/app/views/errors/404.html around line 10)
+The template tags/404.html or tags/404.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/404.html or tags/404.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 10:15:56 ERROR] [play-thread-2] (play:604) - 
+
+@75olb2eil
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 10:16:36 ERROR] [play-thread-2] (play:604) - 
+
+@75olb2eio
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found (In {play}/app/views/errors/404.html around line 10)
+The template tags/404.html or tags/404.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/404.html or tags/404.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 10:16:36 ERROR] [play-thread-2] (play:604) - 
+
+@75olb2ej1
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 10:16:58 ERROR] [play-thread-3] (play:604) - 
+
+@75olb2ej2
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 10:16:59 ERROR] [play-thread-3] (play:604) - 
+
+@75olb2ej3
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 10:20:13 ERROR] [play-thread-2] (test.java.io.searchbox.client.JestExample:2896) - 1页 不存在! 最大页为: 0
+[2017-11-03 10:41:25 ERROR] [play-thread-7] (play:604) - 
+
+@75olb2ej4
+Internal Server Error (500) for request POST /Application/bkASearch
+
+Compilation error (In {play}/app/test/java/io/searchbox/client/JestExample.java around line 2846)
+The file {play}/app/test/java/io/searchbox/client/JestExample.java could not be compiled. Error raised is : i cannot be resolved to a variable
+
+play.exceptions.CompilationException: i cannot be resolved to a variable
+	at play.classloading.ApplicationCompiler$2.acceptResult(ApplicationCompiler.java:264)
+	at org.eclipse.jdt.internal.compiler.Compiler.handleInternalException(Compiler.java:678)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:522)
+	at play.classloading.ApplicationCompiler.compile(ApplicationCompiler.java:300)
+	at play.classloading.ApplicationClasses$ApplicationClass.compile(ApplicationClasses.java:292)
+	at play.classloading.ApplicationClassloader.detectChanges(ApplicationClassloader.java:328)
+	at play.Play.detectChanges(Play.java:637)
+	at play.Invoker$Invocation.init(Invoker.java:199)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 10:41:25 ERROR] [play-thread-7] (play:604) - 
+
+@75olb2ej5
+Error during the 500 response generation
+
+Template not found
+The template errors/500.json does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.json
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 10:43:27 ERROR] [play-thread-1] (test.java.io.searchbox.client.JestExample:2919) - 1页 不存在! 最大页为: 0
+[2017-11-03 10:50:19 ERROR] [play-thread-2] (play:604) - 
+
+@75p0cnn4m
+Internal Server Error (500) for request POST /Application/bkASearch
+
+Execution exception (In {play}/app/test/java/io/searchbox/client/JestExample.java around line 2809)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at test.java.io.searchbox.client.JestExample.baikeAdvanceSearch(JestExample.java:2809)
+	at controllers.Application.bkASearch(Application.java:347)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	... 1 more
+[2017-11-03 10:50:19 ERROR] [play-thread-2] (play:604) - 
+
+@75p0cnn4n
+Error during the 500 response generation
+
+Template not found
+The template errors/500.json does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.json
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 11:01:11 ERROR] [play-thread-1] (play:604) - 
+
+@75p0dplfn
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found (In {play}/app/views/errors/404.html around line 10)
+The template tags/404.html or tags/404.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/404.html or tags/404.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 11:01:11 ERROR] [play-thread-1] (play:604) - 
+
+@75p0dplg0
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 13:54:39 ERROR] [play-thread-1] (test.java.io.searchbox.client.JestExample:2934) - 1页 不存在! 最大页为: 0
+[2017-11-03 14:11:03 ERROR] [play-thread-2] (play:604) - 
+
+@75p1dc6b6
+Internal Server Error (500) for request GET /Application/bkASearch?page=1&p1=%E6%9B%B9%E6%93%8D&p4=%E5%85%A8%E9%9B%86&p5=2017-09-07%2000:00:00&p6=2017-09-15%2023:59:59&p7=%E6%A0%87%E9%A2%98
+
+Execution exception (In {play}/app/test/java/io/searchbox/client/JestExample.java around line 2847)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at test.java.io.searchbox.client.JestExample.baikeAdvanceSearch(JestExample.java:2847)
+	at controllers.Application.bkASearch(Application.java:350)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	... 1 more
+[2017-11-03 14:11:03 ERROR] [play-thread-2] (play:604) - 
+
+@75p1dc6b9
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:15:13 ERROR] [play-thread-1] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 14:21:21 ERROR] [play-thread-7] (play:604) - 
+
+@75p1e09dp
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:21:21 ERROR] [play-thread-7] (play:604) - 
+
+@75p1e09e0
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:31:34 ERROR] [play-thread-8] (play:604) - 
+
+@75p1e09e1
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:31:34 ERROR] [play-thread-8] (play:604) - 
+
+@75p1e09e2
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:32:35 ERROR] [play-thread-9] (play:604) - 
+
+@75p1e09e3
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:32:35 ERROR] [play-thread-9] (play:604) - 
+
+@75p1e09e4
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:38:27 ERROR] [play-thread-10] (play:604) - 
+
+@75p1e09e7
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found (In {play}/app/views/errors/404.html around line 10)
+The template tags/404.html or tags/404.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/404.html or tags/404.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:38:27 ERROR] [play-thread-10] (play:604) - 
+
+@75p1e09ea
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:44:09 ERROR] [play-thread-11] (play:604) - 
+
+@75p1e09eb
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:44:09 ERROR] [play-thread-11] (play:604) - 
+
+@75p1e09ec
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:44:47 ERROR] [play-thread-12] (play:604) - 
+
+@75p1e09ed
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:44:47 ERROR] [play-thread-12] (play:604) - 
+
+@75p1e09ee
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:44:58 ERROR] [play-thread-13] (play:604) - 
+
+@75p1e09ef
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:44:58 ERROR] [play-thread-13] (play:604) - 
+
+@75p1e09eg
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-03 14:57:43 ERROR] [play-thread-14] (test.java.io.searchbox.client.JestExample:2950) - 1页 不存在! 最大页为: 0
+[2017-11-03 16:03:49 ERROR] [play-thread-12] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:03:53 ERROR] [play-thread-7] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:03:55 ERROR] [play-thread-4] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:03:56 ERROR] [play-thread-8] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:04:38 ERROR] [play-thread-20] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:04:39 ERROR] [play-thread-11] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:04:40 ERROR] [play-thread-6] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:04:41 ERROR] [play-thread-23] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:04:41 ERROR] [play-thread-12] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:04:41 ERROR] [play-thread-13] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:05:29 ERROR] [play-thread-1] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 16:21:07 ERROR] [play-thread-17] (test.java.io.searchbox.client.JestExample:2800) - Param invalid! exit...
+[2017-11-03 17:26:59 ERROR] [play-thread-3] (test.java.io.searchbox.client.JestExample:2949) - 1页 不存在! 最大页为: 0
+[2017-11-03 17:29:22 ERROR] [play-thread-6] (test.java.io.searchbox.client.JestExample:2949) - 1页 不存在! 最大页为: 0

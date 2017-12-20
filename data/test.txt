@@ -1,0 +1,92 @@
+[2016-07-29 12:53:42.490]   ******** HttpServer is Starting now! *********
+[2016-07-29 12:53:42.491]   show-PC[10.200.1.121]   Port 8088
+[2016-07-29 12:53:52.252]   127.0.0.1 Connecting on socket:536
+[2016-07-29 12:53:52.284]   127.0.0.1 Connecting on socket:560
+[2016-07-29 12:53:52.288]   127.0.0.1 Connecting on socket:564
+[2016-07-29 12:53:52.297]   Closing socket: 564
+[2016-07-29 12:53:54.630]   127.0.0.1 Connecting on socket:600
+[2016-07-29 12:53:54.867]   Closing socket: 600
+[2016-07-29 12:53:56.622]   127.0.0.1 Connecting on socket:564
+[2016-07-29 12:53:58.127]   Closing socket: 536
+[2016-07-29 12:54:01.634]   127.0.0.1 Connecting on socket:552
+[2016-07-29 12:54:06.761]   WSAGetOverlappedResult() error: 10054
+[2016-07-29 12:54:06.763]   Closing socket: 552
+[2016-07-29 12:54:07.084]   Error occurs when analyzing client request
+[2016-07-29 12:54:07.086]   Closing socket: 560
+[2016-07-29 12:54:14.376]   ******** HttpServer is Stopping now! *********
+[2016-07-29 12:56:57.798]   ******** HttpServer is Starting now! *********
+[2016-07-29 12:56:57.813]   show-PC[10.200.1.121]   Port 8088
+[2016-07-29 12:57:11.162]   127.0.0.1 Connecting on socket:536
+[2016-07-29 12:57:11.211]   127.0.0.1 Connecting on socket:540
+[2016-07-29 12:57:13.729]   127.0.0.1 Connecting on socket:584
+[2016-07-29 12:57:13.772]   Closing socket: 584
+[2016-07-29 12:57:30.222]   Error occurs when analyzing client request
+[2016-07-29 12:57:30.222]   Error occurs when analyzing client request
+[2016-07-29 12:57:30.223]   Closing socket: 540
+[2016-07-29 12:57:30.223]   Closing socket: 536
+[2016-07-29 12:59:50.109]   ******** HttpServer is Stopping now! *********
+[2016-08-01 16:33:56.385]   ******** HttpServer is Starting now! *********
+[2016-08-01 16:33:56.402]   show-PC[10.200.1.121]   Port 8018
+[2016-08-01 16:34:44.103]   192.168.9.9 Connecting on socket:544
+[2016-08-01 16:34:44.134]   192.168.9.9 Connecting on socket:548
+[2016-08-01 16:34:44.317]   Closing socket: 544
+[2016-08-01 16:34:44.399]   Closing socket: 548
+[2016-08-01 16:35:03.801]   192.168.9.9 Connecting on socket:344
+[2016-08-01 16:35:03.976]   Closing socket: 344
+[2016-08-01 16:35:14.864]   192.168.9.9 Connecting on socket:588
+[2016-08-01 16:35:14.888]   Closing socket: 588
+[2016-08-01 16:35:15.034]   192.168.9.9 Connecting on socket:344
+[2016-08-01 16:35:15.036]   Closing socket: 344
+[2016-08-01 16:35:23.510]   192.168.9.9 Connecting on socket:588
+[2016-08-01 16:35:23.512]   192.168.9.9 Connecting on socket:560
+[2016-08-01 16:35:23.513]   192.168.9.9 Connecting on socket:596
+[2016-08-01 16:35:23.516]   192.168.9.9 Connecting on socket:600
+[2016-08-01 16:35:23.556]   Closing socket: 588
+[2016-08-01 16:35:25.786]   WSAGetOverlappedResult() error: 10054
+[2016-08-01 16:35:25.787]   Closing socket: 560
+[2016-08-01 16:35:26.223]   Closing socket: 596
+[2016-08-01 16:35:28.127]   192.168.9.9 Connecting on socket:612
+[2016-08-01 16:35:28.129]   192.168.9.9 Connecting on socket:564
+[2016-08-01 16:35:28.130]   192.168.9.9 Connecting on socket:516
+[2016-08-01 16:35:28.164]   Closing socket: 600
+[2016-08-01 16:35:35.191]   Closing socket: 612
+[2016-08-01 16:35:35.238]   Closing socket: 516
+[2016-08-01 16:35:36.622]   192.168.9.9 Connecting on socket:644
+[2016-08-01 16:35:36.623]   192.168.9.9 Connecting on socket:620
+[2016-08-01 16:35:36.624]   192.168.9.9 Connecting on socket:536
+[2016-08-01 16:35:36.668]   Closing socket: 564
+[2016-08-01 16:35:38.612]   Closing socket: 644
+[2016-08-01 16:35:38.651]   Closing socket: 620
+[2016-08-01 16:35:42.127]   192.168.9.9 Connecting on socket:612
+[2016-08-01 16:35:42.128]   192.168.9.9 Connecting on socket:648
+[2016-08-01 16:35:42.129]   192.168.9.9 Connecting on socket:548
+[2016-08-01 16:35:42.166]   Closing socket: 536
+[2016-08-01 16:35:47.760]   Closing socket: 612
+[2016-08-01 16:35:47.821]   Closing socket: 648
+[2016-08-01 16:35:53.551]   Error occurs when analyzing client request
+[2016-08-01 16:35:53.552]   Closing socket: 548
+[2016-08-01 16:35:57.439]   192.168.9.9 Connecting on socket:652
+[2016-08-01 16:35:57.443]   Closing socket: 652
+[2016-08-01 16:36:01.839]   192.168.9.9 Connecting on socket:548
+[2016-08-01 16:36:01.840]   192.168.9.9 Connecting on socket:532
+[2016-08-01 16:36:01.841]   192.168.9.9 Connecting on socket:616
+[2016-08-01 16:36:01.843]   192.168.9.9 Connecting on socket:596
+[2016-08-01 16:36:01.880]   Closing socket: 548
+[2016-08-01 16:36:21.841]   Error occurs when analyzing client request
+[2016-08-01 16:36:21.841]   Closing socket: 532
+[2016-08-01 16:36:21.843]   Error occurs when analyzing client request
+[2016-08-01 16:36:21.844]   Closing socket: 616
+[2016-08-01 16:36:21.845]   Error occurs when analyzing client request
+[2016-08-01 16:36:21.846]   Closing socket: 596
+[2016-08-01 16:36:34.767]   192.168.9.9 Connecting on socket:660
+[2016-08-01 16:36:34.768]   192.168.9.9 Connecting on socket:536
+[2016-08-01 16:36:34.769]   192.168.9.9 Connecting on socket:636
+[2016-08-01 16:36:34.827]   Closing socket: 660
+[2016-08-01 16:36:44.768]   Error occurs when analyzing client request
+[2016-08-01 16:36:44.769]   Closing socket: 536
+[2016-08-01 16:36:54.786]   Error occurs when analyzing client request
+[2016-08-01 16:36:54.787]   Closing socket: 636
+[2016-08-01 16:37:16.340]   ******** HttpServer is Stopping now! *********
+[2016-08-01 16:50:19.419]   ******** HttpServer is Starting now! *********
+[2016-08-01 16:50:19.419]   show-PC[10.200.1.121]   Port 8018
+[2016-08-01 17:51:22.421]   ******** HttpServer is Stopping now! *********

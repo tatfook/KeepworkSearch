@@ -1,0 +1,56 @@
+[2017-11-17 15:04:25 ERROR] [play-thread-1] (play:604) - 
+
+@762pfco72
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found (In {play}/app/views/errors/404.html around line 10)
+The template tags/404.html or tags/404.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/404.html or tags/404.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-17 15:04:25 ERROR] [play-thread-1] (play:604) - 
+
+@762pfco75
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-11-17 15:24:29 ERROR] [play-thread-2] (play:604) - 
+
+@762pi37af
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-11-17 15:24:29 ERROR] [play-thread-2] (play:604) - 
+
+@762pi37ag
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)

@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>大富知识库</title>
+    <link rel="stylesheet" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/jquery.fileupload.css">
+    <link rel="stylesheet" href="css/jquery.fileupload-ui.css">
+    <noscript><link rel="stylesheet" href="css/jquery.fileupload-noscript.css"></noscript>
+    <noscript><link rel="stylesheet" href="css/jquery.fileupload-ui-noscript.css"></noscript>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <div class="headline">
+                <section class="hd-logo">
+                    <nav class="nav-logo">
+                        <a href="index.html"><img src="images/logo_ta.png"></a>
+                    </nav>
+                </section>
+                <section class="hd-left">
+                    <nav class="nav-left">
+                        <a href="index.html">镜像搜索</a>
+                        <a href="index_hundred.html">百科搜索</a>
+                       <!--  <a href="index_net.html">乾坤一网搜索</a> -->
+                        <a href="index_format.html" class="selected">格式转换</a>
+                        <a href="static.html">百科统计</a>
+                    </nav>
+                </section>
+            </div>
+        </header> 
+        <div class="pccenter">
+            <div style="width:95%;height:40px;margin-top:40px;">
+                <form>
+                    <div class="form-group" style="width:65%;">
+                        <div class="row fileupload-buttonbar" id="file1">
+                            <div class="col-lg-7">
+                                <span class="btn btn-success fileinput-button">
+                                    <i class="glyphicon glyphicon-plus"></i>
+                                    <span>选择上传文件</span>
+                                    <input id="file" type="file"  name='file[]' multiple>
+                                </span>
+                                <button id="btn" type="button" class="btn btn-primary allstart hide" onclick="uploadAll()">
+                                    <i class="glyphicon glyphicon-upload"></i>
+                                    <span>全部开始</span>
+                                </button>
+                                <button type="reset" class="btn btn-warning allcancel hide" onclick="cancelAll()">
+                                    <i class="glyphicon glyphicon-ban-circle"></i>
+                                    <span>全部取消</span>
+                                </button>
+                                <button type="reset" class="btn btn-primary allhistory" onclick="$('#history').removeClass('hide');gethistory(-1,-1,true);">
+                                    <i class="glyphicon glyphicon-eye-open"></i>
+                                    <span>查看历史</span>
+                                </button>
+                                <span class="fileupload-process"></span>
+                            </div>
+                            <div class="col-lg-5 fileupload-progress fade">
+                                <div class="progress progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="progress-bar progress-bar-success" style="width:0%;"></div>
+                                </div>
+                                <div class="progress-extended">&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <hr/>
+    </div>
+    <!-- 加个md转化结果详情的模态框==============start=============== -->
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" id="detail" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">md转化结果详情</h4>
+                </div>
+                <div class="modal-body content">
+                    <h3 style="text-align:center;"></h3>
+                    <iframe src="" width="100%" height="320" scroll="auto" frameborder=0></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- 加个md转化结果详情的模态框==============end=============== -->
+
+
+    <script>!window.jQuery && document.write(unescape('%3Cscript src="js/minified/jquery-2.1.4.min.js"%3E%3C/script%3E'))</script>
+    <script>
+    //参数设置，若用默认值可以省略以下面代
+    toastr.options = {
+        "closeButton": true, //是否显示关闭按钮
+        "debug": false, //是否使用debug模式
+        //"positionClass": "toast-top-full-width",//弹出窗的位置
+        "showDuration": "300",//显示的动画时间
+        "hideDuration": "1000",//消失的动画时间
+        "timeOut": "5000", //展现时间
+        "extendedTimeOut": "1000",//加长展示时间
+        "showEasing": "swing",//显示时的动画缓冲方式
+        "hideEasing": "linear",//消失时的动画缓冲方式
+        "showMethod": "fadeIn",//显示时的动画方式
+        "hideMethod": "fadeOut" //消失时的动画方式
+    };
+    if(''!=""){
+        var str='';
+        var arr=str.split('成功');
+        if(arr.length>1){
+            toastr.success('');
+        }else{
+            toastr.warning('');
+        }
+    }
+    </script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/res.js"></script>
+    <script src="js/vendor/jquery.ui.widget.js"></script>
+    <script src="http://blueimp.github.io/JavaScript-Templates/js/tmpl.min.js"></script>
+    <script src="http://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+    <script src="http://blueimp.github.io/JavaScript-Canvas-to-Blob/js/canvas-to-blob.min.js"></script>
+    <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/jquery.iframe-transport.js"></script>
+    <script src="js/jquery.fileupload.js"></script>
+    <script src="js/jquery.fileupload-process.js"></script>
+    <script src="js/jquery.fileupload-image.js"></script>
+    <script src="js/jquery.fileupload-audio.js"></script>
+    <script src="js/jquery.fileupload-video.js"></script>
+    <script src="js/jquery.fileupload-validate.js"></script>
+    <script src="js/jquery.fileupload-ui.js"></script>
+    <script>
+        var mdCount=-1;//记录md转换的成功次数，从而控制样式
+        /*$(document).ready(function(){
+            gethistory(-1);
+        });*/
+      
+        /*index:代表转换后，前几个记录加样式
+          showcount:代表显示多少条历史记录
+          flag：true--历史记录,false--转换结果
+        */
+        function gethistory(index,showcount,flag){
+        //返回出用户转换mod的历史
+            $.ajax({
+                url: 'http://121.14.117.219:8080/KnowledgeServer/api/fileImportMod/uploadList?username='+"divitor",
+                type: 'GET',
+                dataType : "jsonp",
+                jsonp:"jsonpcallback",
+                success: function(res) {
+                    $('#showRes').html("");
+                    $('#history h3').removeClass('hide');
+                    if(flag){
+                        $('#history h3').html("&nbsp;md转换历史");
+                            if($('#history').hasClass('panel-info')){
+                                $('#history').removeClass('panel-info');
+                            }
+                            $('#history').addClass('panel-primary');
+                        }else{
+                            $('#history h3').html("&nbsp;md转换结果");
+                        }
+                        
+                        $('.col-md-4').html("时间");
+                        $('.col-md-7').html("目录名称");
+                        $('#history table').removeClass('hide');
+                        var str="";
+                        if(index>=i){
+                            str+=("<tr class='msg"+i+" mdconvert' onmouseover='$(this).css(\"background-color\",\"#cdedcd\");'><td>"+i+"</td><td>"+res['data'][i]['dateTime']+"</td><td><a href='#' onclick='changeTableData("+i+");'>"+res['data'][i]['dirName']+"</a></td></tr>");
+                        }else{
+                            if(!flag){
+                            //转换结果
+                                for(var i=0;i<=showcount;i++){
+                                    str+=("<tr class='msg"+i+"'><td>"+i+"</td><td>"+res['data'][i]['dateTime']+"</td><td><a href='#' onclick='changeTableData("+i+");'>"+res['data'][i]['dirName']+"</a></td></tr>");
+                                }
+                            } else{
+                            //历史
+                                if(res.data.length==0){
+                                    str+=("<tr class='msg"+i+"'><td colspan='3'>暂无记录!</td></tr>");
+                                }else{
+                                    for(var i=0;i<res.data.length;i++){
+                                        str+=("<tr class='msg"+i+"'><td>"+i+"</td><td>"+res['data'][i]['dateTime']+"</td><td><a href='#' onclick='changeTableData("+i+");'>"+res['data'][i]['dirName']+"</a></td></tr>");
+                                    }
+                                }  
+                            }
+                        }
+                        $('#history tbody').html(str);
+                        changeTableData=function(index){
+                            //console.log(res['data'][index]['files']);
+                            var allfiles=res['data'][index]['files'];
+                            var str="";
+                            if(flag){
+                              str="<tr><td>0</td><td>返回上一级</td><td><a href='#' onclick='gethistory(-1,-1,true);'><i class='glyphicon glyphicon-arrow-left'></i></a></td></tr>";
+                            }else{
+                              str="<tr><td>0</td><td>返回上一级</td><td><a href='#' onclick='gethistory(-1,mdCount,false);'><i class='glyphicon glyphicon-arrow-left'></i></a></td></tr>";
+                            }
+                            
+
+                            $('.col-md-4').html("文件名称");
+                            $('.col-md-7').html("文件地址");
+                            for(var j=0;j<allfiles.length;j++){
+                                str+=("<tr><td>"+(j+1)+"</td><td>"+allfiles[j]['fileName']+"</td><td><a href='#' data-toggle='modal' data-target='.bs-example-modal-lg' onclick='showDetail(\""+allfiles[j]['fileName']+"\",\""+allfiles[j]['fileUrl']+"\")'>"+allfiles[j]['fileUrl']+"</a></td></tr>");
+                            }
+                            $('#history tbody').html(str);
+                        }
+                    }
+                });
+            }
+            $('body').append('<div style="text-align:left;width:95%;"><div class="panel panel-success hide" id="upload" style="width:60%;float:left;"><div class="panel-heading">&nbsp;上传文件信息</div><div class="panel-body"><table class="table table-striped" role="presentation"><tbody class="files"></tbody></table></div></div><div class="panel panel-info hide" id="history" style="width:48%;float:left;margin-left:10px;"><div class="panel-heading">&nbsp;md转换历史</div><div class="panel-body"><table class="table table-hover"><thead><tr><th class=\'col-md-1\'>ID</th><th class=\'col-md-4\'>文件名称</th><th class=\'col-md-7\'>文件地址</th></tr></thead><tbody></tbody></table></div></div>');
+    </script>
+    <script type="text/javascript">
+        function showUpload(){
+            var hascancelall=false;
+            for(var i=0;i<=total;i++){
+                if($('tr button').hasClass('cancel')){
+                    hascancelall=true;
+                    break;
+                }
+            }
+            if(!hascancelall){
+              $('.allstart').addClass('hide');
+              $('.allcancel').addClass('hide');
+            }
+        }
+       /*控制上传个数为3-------------------start---------------*/
+        var ids=[];//实际全部上传的id数组
+        var total=0;
+        var actualUpTotal=0;
+        var upTotal=0;//一共上传几个
+        var curclick=0;
+        var upfinish=0;//表示当前完成了几个上传
+        /*控制上传个数为3-------------------start---------------*/
+        var uidArray = new Array();
+        var  wsServer = 'ws://121.14.117.219:8080/KnowledgeServer/websocket?username='+"divitor";
+        var  websocket;
+        function connect(i, filename) {
+            websocket = new WebSocket(wsServer);
+            websocket.onopen = function (evt) { onOpen(evt) };
+            websocket.onclose = function (evt) { onClose(evt) };
+            websocket.onmessage = function (evt) { onMessage(evt) };
+            websocket.onerror = function (evt) { onError(evt) };
+            function onOpen(evt) {
+                //console.log("websocket: Connected");
+            }
+            function onClose(evt) {
+                //console.log("websocket: Disconnected");
+            }
+            function onMessage(evt) {
+                console.log('WebSocket recv: ' + evt.data);
+                var obj = JSON.parse(evt.data);
+                if(obj.waitqueue){
+                    if($('table').hasClass('table-striped')){
+                        $('.table-striped').removeClass('table-striped');
+                    }
+                    $('.mdres'+i).html("前面还有"+obj.waitqueue+"个在等待，请稍候&nbsp;<img src='images/loading.gif' width='35px'/>");
+                        //showUpload();
+                }
+                if (obj.type==0) {
+                    uidArray[obj.uid] = i;
+                    uploadFile(obj.uid, i, filename);
+                }
+                if (obj.type==1) {
+                    // 进度
+                    updateProgress(uidArray[obj.uid], obj.progress);
+                }
+                if (obj.type==3) {
+                }
+                if (obj.type==4) {
+                    // 速度
+                    updateSpeed(uidArray[obj.uid], obj.speed);
+                }if (obj.type==5) {
+                    // 转换中md
+                    if($('table').hasClass('table-striped')){
+                        $('.table-striped').removeClass('table-striped');
+                    }
+                    $('.mdres'+i).html("&nbsp;转换中，请稍候&nbsp;<img src='images/loading.gif' width='35px'/>");
+                    //showUpload();
+                }
+                if(obj.filelist){
+                    $('.mdres'+i).html("md转换成功！");
+                    mdCount++;
+                    $('#history').removeClass('hide');
+                    gethistory(-1,mdCount,false);
+                    //将转换结果从转换历史中拆出
+                    $('#history .panel-heading').html('&nbsp;md转换结果');
+                    //showUpload();
+                    for(var k=0;k<ids.length;k++){
+                        if(k>mdCount){
+                            $('.msg'+k).addClass('hide');
+                        }else{
+                        $('.msg'+k).removeClass('hide');
+                    }
+                }
+                $('.tr'+i).hide("slow");
+                $('.tr'+i).remove();
+                if(!$("#upload tbody").html()){
+                    $('#upload').addClass('hide');
+                    $('.allstart').addClass('hide');
+                    $('.allcancel').addClass('hide');
+                    if($('.allhistory').hasClass('hide')){
+                        $('.allhistory').removeClass('hide');
+                    }
+                    if($('.fileinput-button').hasClass('hide')){
+                        $('.fileinput-button').removeClass('hide');
+                    }
+                }
+            }
+        }
+        function onError(evt) {
+            //console.log('websocket Error: ' + evt.data);
+        }
+        }
+        function sendMsg(){
+            var msg=document.getElementById("content").value;
+            if (msg == "") {
+                //console.log("发送信息不可以为空");
+                return;
+            }
+            websocket.send(msg);
+        }
+    </script>
+    <script type="text/javascript">
+        function uploadFile(uid, i, filename) {
+            $.ajax({
+                url: 'http://121.14.117.219:8080/KnowledgeServer/api/fileImportMod/uploadCheck?uid='+uid+'&username='+"divitor"+'&filename='+filename,
+                type: 'GET',
+                data: {},
+                processData: false,
+                contentType: false,
+                success: function(res) {
+                    console.log(res);
+                    var obj = JSON.parse(res);
+                    if (obj.code=="202")
+                        console.log(obj.msg);
+                    if (obj.code=="203")
+                        console.log(obj.msg);
+                    if (obj.code=="204"){
+                        console.log(obj.msg);
+                        //console.log('文件已存在，上传失败----2----'+filename);
+                        $('td > .size'+i).parent().append('<div><span class="label label-danger">Error</span>&nbsp;上传失败，文件已存在！</div>');
+                        /*控制上传个数为3-------------------start---------------*/
+                        //调过Error情况
+                        upfinish++;
+                        curclick=upfinish+2;
+                        //console.log(upfinish+"----"+curclick+"----"+upTotal+"----1");
+                        if(curclick<upTotal){
+                        //console.log(upfinish+"----"+curclick+"----"+upTotal+"----2");
+                            $('#btn'+ids[2+upfinish]).click();
+                        }
+                      /*控制上传个数为3-------------------start---------------*/
+                        $('.size'+i).remove();
+                        $('#btn'+i).remove();
+                        $('.speed'+i).remove();
+                        $('.progress'+i).parent().remove();
+                    }
+                        
+                    if (obj.code=="200") {
+                        var formData = new FormData();
+                        formData.append('file[]', $('#file')[0].files[i]);
+                        $.ajax({
+                            url: 'http://121.14.117.219:8080/KnowledgeServer/api/fileImportMod/fileUpload?uid='+uid+"&username="+"divitor",
+                            type: 'POST',
+                            cache: false,
+                            data: formData,
+                            processData: false,
+                            contentType: false,
+                            success: function(res) {
+                                var obj = JSON.parse(res);
+                            }
+                        }).done(function(result){
+                        }).fail(function(res){ 
+                        });
+                    }
+                }
+            }).done(function(result){
+            }).fail(function(res){ 
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        function F_Open_dialog() {
+            document.getElementById("file").click();
+        }
+
+        function upload(i){
+            var filename = $('#file')[0].files[i].name;
+            connect(i, filename);
+        }
+
+        function uploadAll(){
+            //每次点击“全部上传”的时候，将这两个值置空，可以解决之前，当点击一次全部上传再次执行全部上传时的只传三个的问题
+            curclick=0;
+            upfinish=0;
+            ids=[];
+            /*控制上传个数为3-------------------start---------------*/
+            upTotal=$('#file')[0].files.length;
+            for(var i=0; i<upTotal; i++){
+            //console.log(i);
+            //console.log($('.size'+i+" span").hasClass('label-danger'));
+                if(!$('.size'+i+" span").hasClass('label-danger')){
+                    ids.push(i);
+                }
+            }
+            //console.log(ids);
+             actualUpTotal=ids.length;
+            
+            if(ids.length<=3){
+                //alert('1');
+                for(var i=0; i<ids.length; i++){
+                    $("#btn"+ids[i]).click();
+                }
+            }else{
+                //alert('2');
+                for(var i=0; i<3; i++){
+                    //console.log('click button ids:'+"#btn"+ids[i]);
+                    $("#btn"+ids[i]).click();
+                }
+            }
+            /*控制上传个数为3-------------------start---------------*/
+        }
+
+        function  updateProgress(i, progress){
+            $('.progress'+i).css('width',progress+"%");
+            $('.progress'+i).html(progress+"%");
+            $('.progress'+i).attr('myprogress',progress);
+            if(progress==100){
+
+                  /*控制上传个数为3-------------------start---------------*/
+                upfinish++;
+                var curclick=upfinish+2;
+                if(curclick<upTotal){
+                    $('#btn'+ids[curclick]).click();
+                }
+                /*控制上传个数为3-------------------end---------------*/
+
+                //$('.speed'+i).parent().append("<span class='upres"+i+"'>上传成功！</span>");
+                $('.size'+i).remove();
+                $('.speed'+i).remove();
+                //$('.progress'+i).parent().remove();
+                if($('table').hasClass('table-striped')){
+                    $('.table-striped').removeClass('table-striped');
+                }
+                $('#btn'+i).parent().append("<span class='mdres"+i+"'>&nbsp;加载中转换信息，请稍候&nbsp;<img src='images/loading.gif' width='35px'/></span>");
+                  //showUpload();
+                $('#btn'+i).remove();
+                $('#ccl'+i).remove();
+            }
+        }
+
+        function updateSpeed(i, speed){
+            $('td > .speed'+i).html("上传速度: "+speed);
+            var already=Math.ceil($('td > .size'+i).attr('mybyte')*$('.progress'+i).attr('myprogress')/100.0);
+            if(already>$('td > .size'+i).attr('mybyte')){
+                already=$('td > .size'+i).attr('mybyte');
+            }
+
+            //解决页面显示NaN的问题
+            $('.size'+i+' > .already'+i).html('&nbsp;&nbsp;已完成: '+getAll(already?already:0));
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+[2017-10-18 17:02:02 ERROR] [play-thread-4] (play:604) - 
+
+@75kg02m4b
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:02:02 ERROR] [play-thread-4] (play:604) - 
+
+@75kg02m4c
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:02:10 ERROR] [play-thread-6] (play:604) - 
+
+@75kg02m4d
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:02:10 ERROR] [play-thread-6] (play:604) - 
+
+@75kg02m4e
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:02:12 ERROR] [play-thread-1] (play:604) - 
+
+@75kg02m4f
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:02:12 ERROR] [play-thread-1] (play:604) - 
+
+@75kg02m4g
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:02:32 ERROR] [play-thread-8] (play:604) - 
+
+@75kg02m4h
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:02:32 ERROR] [play-thread-8] (play:604) - 
+
+@75kg02m4i
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:06:58 ERROR] [play-thread-14] (play:604) - 
+
+@75kg1cfna
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:06:58 ERROR] [play-thread-14] (play:604) - 
+
+@75kg1cfnb
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:08:10 ERROR] [play-thread-25] (play:604) - 
+
+@75kg1cfnc
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:08:10 ERROR] [play-thread-25] (play:604) - 
+
+@75kg1cfnd
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:08:13 ERROR] [play-thread-16] (play:604) - 
+
+@75kg1cfne
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:08:13 ERROR] [play-thread-16] (play:604) - 
+
+@75kg1cfnf
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:08:17 ERROR] [play-thread-2] (play:604) - 
+
+@75kg1cfng
+Internal Server Error (500) for request GET /favicon.ico
+
+Template not found
+The template errors/404.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/404.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:08:17 ERROR] [play-thread-2] (play:604) - 
+
+@75kg1cfnh
+Error during the 500 response generation
+
+Template not found
+The template errors/500.txt does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : errors/500.txt
+	at play.templates.TemplateLoader.load(TemplateLoader.java:199)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-18 17:08:17 ERROR] [play-thread-19] (test.java.io.searchbox.client.JestExample:882) - 1页 不存在! 最大页为: 0

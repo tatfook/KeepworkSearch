@@ -1,0 +1,125 @@
+[2017-10-17 10:34:58 ERROR] [play-thread-1] (play:604) - 
+
+@75k6ko882
+Internal Server Error (500) for request GET /Application/baikesearch?keyword=%E5%A4%A7%E6%96%87%E4%BB%B6&page=1&size=10&highlight=1&flag=0
+
+Execution exception (In {play}/app/test/java/io/searchbox/client/JestExample.java around line 898)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at test.java.io.searchbox.client.JestExample.baikeListTitleSearch(JestExample.java:898)
+	at controllers.Application.baikesearch(Application.java:318)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	... 1 more
+[2017-10-17 10:34:58 ERROR] [play-thread-1] (play:604) - 
+
+@75k6ko885
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-17 10:38:29 ERROR] [play-thread-1] (play:604) - 
+
+@75k6l8moe
+Internal Server Error (500) for request GET /Application/baikesearch?keyword=%E5%A4%A7%E6%96%87%E4%BB%B6&page=1&size=10&highlight=1&flag=0
+
+Execution exception (In {play}/app/test/java/io/searchbox/client/JestExample.java around line 898)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at test.java.io.searchbox.client.JestExample.baikeListTitleSearch(JestExample.java:898)
+	at controllers.Application.baikesearch(Application.java:318)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	... 1 more
+[2017-10-17 10:38:29 ERROR] [play-thread-1] (play:604) - 
+
+@75k6l8moh
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-17 10:40:06 ERROR] [play-thread-1] (play:604) - 
+
+@75k6lh188
+Internal Server Error (500) for request GET /Application/baikesearch?keyword=%E5%A4%A7%E6%96%87%E4%BB%B6&page=1&size=10&highlight=1&flag=0
+
+Execution exception (In {play}/app/test/java/io/searchbox/client/JestExample.java around line 891)
+NullPointerException occured : null
+
+play.exceptions.JavaExecutionException
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:231)
+	at Invocation.HTTP Request(Play!)
+Caused by: java.lang.NullPointerException
+	at test.java.io.searchbox.client.JestExample.baikeListTitleSearch(JestExample.java:891)
+	at controllers.Application.baikesearch(Application.java:318)
+	at play.mvc.ActionInvoker.invokeWithContinuation(ActionInvoker.java:544)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:494)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:489)
+	at play.mvc.ActionInvoker.invokeControllerMethod(ActionInvoker.java:458)
+	at play.mvc.ActionInvoker.invoke(ActionInvoker.java:162)
+	... 1 more
+[2017-10-17 10:40:06 ERROR] [play-thread-1] (play:604) - 
+
+@75k6lh18b
+Error during the 500 response generation
+
+Template not found (In {play}/app/views/errors/500.html around line 10)
+The template tags/500.html or tags/500.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/500.html or tags/500.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/500.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve500(PlayHandler.java:836)
+	at Invocation.HTTP Request(Play!)
+[2017-10-17 17:27:29 ERROR] [play-thread-23] (play:604) - 
+
+@75k7jdkk5
+serveStatic for request GET /public/js/minified/jquery-2.1.4.min.js
+
+Template not found (In {play}/app/views/errors/404.html around line 10)
+The template tags/404.html or tags/404.tag does not exist.
+
+play.exceptions.TemplateNotFoundException: Template not found : tags/404.html or tags/404.tag
+	at play.templates.GroovyTemplate$ExecutableTemplate.invokeTag(GroovyTemplate.java:395)
+	at {play}/app/views/errors/404.html.(line:10)
+	at play.templates.GroovyTemplate.internalRender(GroovyTemplate.java:263)
+	at play.templates.Template.render(Template.java:26)
+	at play.templates.GroovyTemplate.render(GroovyTemplate.java:211)
+	at play.server.PlayHandler.serve404(PlayHandler.java:745)
+	at play.server.PlayHandler.serveStatic(PlayHandler.java:901)
+	at Invocation.HTTP Request(Play!)

@@ -1,0 +1,171 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	font-family: "微软雅黑";
+	font-size: 16px;
+	list-style: none;
+}
+
+body {
+	padding: 0 58px;
+}
+
+#header {
+  border-bottom: 1px solid rgb(240,240,240);
+}
+
+.headline {
+	 overflow: hidden;
+}
+
+.hd-logo {
+	margin-top: 21px;
+	float: left;
+	margin-right: 54px;
+}
+
+.hd-logo img {
+	width: 192px;
+	height: 36px;
+}
+
+.hd-left {
+	margin-top: 27px;
+}
+
+.hd-left {
+	float: left;
+}
+
+.hd-left a {
+	margin-right: 29px;
+	color: #000;
+}
+
+.nav-left a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.hd-left a.selected {
+	display: inline-block;
+	font-weight: bold;
+	padding-bottom: 6px;
+	border-bottom: 4px solid rgb(61,181,230);
+}
+
+.con-search {
+	margin-top: 20px;
+}
+
+.con-input {
+	width: 726px;
+	height: 54px;
+	border: 1px solid rgb(191,191,191);
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.con-input:focus,
+.search-btn:focus {
+	outline:none;
+}
+
+.search-btn:hover {
+	cursor:pointer;
+}
+
+.search-btn:active {
+	cursor:pointer;
+	background: #5599ff;
+}
+
+.search-btn {
+	height: 54px;
+	width: 92px;
+	background: rgb(61,181,230);
+	color: #fff;
+	border-color: rgb(61,181,230);
+	border-style:solid;
+    border-width:1px;
+    box-sizing: border-box;
+}
+
+.con-search span{
+	height: 59px;
+	display: inline-block;
+	line-height: 59px;
+	font-size: 14px;
+	color: #777;
+}
+
+.con-search label {
+	font-size: 14px;
+}
+
+/* .con-search .head {
+	margin-left: 24px;
+	margin-right: 47px;
+} */
+
+.con-search .digital {
+	margin-left: 24px;
+	margin-right: 18px;
+}
+
+#pagination {
+	margin-top: 70px;
+}
+
+#mainbody {
+	min-height: 600px;
+	width: 60%;
+}
+
+.list {
+	margin-top: 30px;
+}
+
+.content {
+	font-size: 14px;
+}
+
+.title,
+.content {
+	margin-bottom: 10px;
+}
+
+.title a:hover{
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.link1 {
+	font-size: 13px;
+}
+
+.link1:link,
+.link1:visited,
+.link1:hover,
+.link1:active {
+	text-decoration: none;
+	color: green;
+}
+
+.modal-body p {
+	font-size: 14px;
+}
+
+.body-content {
+	width:100%; 
+	height:425px; 
+	padding:20px; 
+	overflow:auto; 
+	-webkit-border-radius:3px; 
+	-moz-border-radius:3px; 
+	border-radius:3px;
+}
+
+
+

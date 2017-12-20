@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>高级搜索</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/search.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/search.js"></script>
+    <script language="javascript" src="datepicker/WdatePicker.js"></script>
+</head>
+<body>    
+	<div class="search">
+        <div class="logo">
+       	    <a href="index_hundred.html"><img src="images/logo_ta.png" alt="logo"></a>
+        </div>
+        <div class="form">
+        	<form id="form">
+                <table class="table">
+                    <tr bgcolor="#e8e8e8">
+                    	<td width="12%" rowspan="4" align="right" style="font-weight: bold;">搜索结果：</td>
+                    	<td width="28%">包含以下<span style="font-weight: bold;">全部</span>的关键词</td>
+                    	<td>
+                    		<input type="text" name="p1">
+                    	</td>
+                    </tr>
+                    <tr bgcolor="#e8e8e8">
+                    	<td>包含以下的完整关键词</td>
+                    	<td>
+                    		<input type="text" name="p2">
+                    	</td>
+                    </tr>
+                    <tr bgcolor="#e8e8e8">
+                    	<td>包含以下任意一个关键词</td>
+                    	<td>
+                    		<input type="text" name="p3">
+                    	</td>
+                    </tr>
+                    <tr bgcolor="#e8e8e8">
+                    	<td>不包括以下关键词</td>
+                    	<td>
+                    		<input type="text" name="p4">
+                    	</td>
+                    </tr>
+                    <tr>
+                    	<td align="right" style="font-weight: bold;">时间：</td>
+                    	<td>限定要搜索的网页的时间是</td>
+                    	<td>
+                    		<input type="text" class="Wdate date" name="p5" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
+                    		<input type="text" class="Wdate date" name="p6" onClick="WdatePicker({el:this,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
+                    	</td>
+                    </tr>
+                    <tr>
+                        <td align="right" style="font-weight: bold;">关键词位置：</td>
+                        <td>查询关键词位于</td>
+                        <td>
+                        	<label class="radio-inline">
+                                <input type="radio" name="p7" id="inlineRadio1" value="标题" checked> 标题
+							</label>
+							<label class="radio-inline">
+							    <input type="radio" name="p7" id="inlineRadio2" value="正文"> 正文
+							</label>
+							<label class="radio-inline">
+							    <input type="radio" name="p7" id="inlineRadio3" value="全部"> 全部
+							</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>
+                        	<input type="button" name="" value="高级搜索" class="btn btn-primary" onclick="search()">
+                        </td>
+                    </tr>
+                </table>
+        	</form>
+        </div>
+	</div>
+</body>
+</html>

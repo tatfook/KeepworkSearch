@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索结果</title>
+	<link rel="stylesheet" type="text/css" href="css/search_list.css">
+	<link rel="stylesheet" type="text/css" href="css/jqPaginator.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.dotdotdot.min.js"></script>
+	<script src="js/search_list.js"></script>
+	<script src="js/jqPaginator.js"></script>
+	<script src="js/jquery.params.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+	<div id="container">
+		<header id="header">
+		    <div class="headline">
+			    <section class="hd-logo">
+			    	<nav class="nav-logo">
+					    <a href="index.html"><img src="images/logo_ta.png"></a>
+				    </nav>
+			    </section>
+			    <section class="hd-left">
+			    	<nav class="nav-left">
+			    		<a href="index.html" class="image">镜像搜索</a>
+			    		<a href="index_hundred.html" class="selected">百科搜索</a>
+			    		<!-- <a href="index_net.html" class="aNet">乾坤一网搜索</a> -->
+			    		<a href="index_format.html">格式转换</a>
+			    		<a href="static.html">百科统计</a>
+			    	</nav>
+			    </section>
+		    </div>
+		    <section class="con-search">
+					<input type="text" name="" id="input" class="con-input"><input type="button" name="" id="search-btn" value="搜一下" class="search-btn"><br/>
+					<!-- <span class="head">
+						<input type="radio" name="radioCheck" value="0" class="tit" checked="checked">
+						<label>标题</label>
+					</span>
+					<span class="global">
+						<input type="radio" name="radioCheck" value="1" class="context">
+						<label>全文</label>
+					</span> -->
+					<span class="digital"></span>
+					<span class="second"></span>
+			</section>
+		</header>
+		<div id="mainbody"></div>
+		<footer>
+        	<div id="pagination"></div>
+        </footer>
+	</div>
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document" style="width:800px">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                   <h4 class="modal-title" id="myModalLabel">文章详情</h4>
+                </div>
+                <div class="modal-body body-content">
+                    <h3 style="text-align:center;"></h3>
+                    <p></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>

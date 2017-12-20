@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "微软雅黑";
+}
+
+.search {
+	padding: 0 60px;
+}
+
+.logo {
+	border-bottom: 1px solid #ddd;
+	padding: 8px 0;
+}
+
+.logo img {
+	width: 192px;
+	height: 36px;
+}
+
+.form {
+	margin-top: 20px;
+}
+
+input {
+	width: 35%;
+	padding: 0 4px;
+}
+
+input.btn {
+	width: 22%;
+}
+
+input.date {
+	width: 24%;
+	height: 24px;
+}
+
+input.date:hover{
+	cursor: pointer;
+}
+
+
+
+

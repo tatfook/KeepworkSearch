@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/result.css">
+	<style>
+		#header {
+			border-bottom: none;
+		}
+		p {
+			margin: 30px 0;
+			text-align: center;
+			font-weight: bold;
+		}
+		iframe {
+			border: 1px solid #ddd;
+		}
+		#mainbody {
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<div id="container">
+		<header id="header">
+		    <div class="headline">
+			    <section class="hd-logo">
+			    	<nav class="nav-logo">
+					    <a href="index.html"><img src="images/logo_ta.png"></a>
+				    </nav>
+			    </section>
+			    <section class="hd-left">
+			    	<nav class="nav-left">
+			    		<a href="index.html">镜像搜索</a>
+			    		<a href="index_hundred.html" class="image">百科搜索</a>
+			    		<a href="index_format.html">格式转换</a>
+			    		<a href="static.html" class="selected">百科统计</a>
+			    	</nav>
+			    </section>		
+		    </div>
+		</header>
+		<div id="mainbody">
+		    <p>百科数据实时统计</p>
+			<iframe src="http://10.0.1.36:5601/app/kibana#/dashboard/9158d440-b238-11e7-8573-2102d4a2fec8?embed=true&_g=(refreshInterval%3A(display%3AOff%2Cpause%3A!f%2Cvalue%3A0)%2Ctime%3A(from%3A'2017-10-16T05%3A53%3A36.260Z'%2Cmode%3Aabsolute%2Cto%3A'2017-10-16T06%3A08%3A36.260Z'))" height="800" width="1270"></iframe>
+		</div>
+	</div>
+</body>
+</html>
